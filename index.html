@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Netto Bijtelling Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Netto Bijtelling Calculator</h1>
+
+    <label for="jaar">Jaar van op kenteken zetten:</label>
+    <select id="jaar"></select>
+
+    <label for="type">Rij je elektrisch?</label>
+    <select id="type">
+      <option value="elektrisch">Ja</option>
+      <option value="benzine">Nee</option>
+    </select>
+
+    <label for="catalogus">Cataloguswaarde (€):</label>
+    <input type="number" id="catalogus" placeholder="Bijv. 45000">
+
+    <label for="inkomen">Bruto jaarinkomen (€):</label>
+    <input type="number" id="inkomen" placeholder="Bijv. 60000">
+
+    <label for="bijdrage">Eigen bijdrage (€):</label>
+    <input type="number" id="bijdrage" value="0">
+
+    <button onclick="berekenBijtelling()">Bereken Netto Bijtelling</button>
+
+    <div id="resultaat"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
